@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teme_BT_QA_AUTO_2021", "Teme_BT_QA_AUTO_2021\Teme_BT_QA_AUTO_2021.csproj", "{288BC236-433A-4D8A-B61C-B7B98FA76F05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teme_BT_QA_AUTO_2021", "Teme_BT_QA_AUTO_2021\Teme_BT_QA_AUTO_2021.csproj", "{288BC236-433A-4D8A-B61C-B7B98FA76F05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_Tema", "Library_Tema\Library_Tema.csproj", "{5B4E2B81-E3EB-4938-A43B-9AF7730F3EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volume_Teme", "Volume_Teme\Volume_Teme.csproj", "{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{288BC236-433A-4D8A-B61C-B7B98FA76F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{288BC236-433A-4D8A-B61C-B7B98FA76F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{288BC236-433A-4D8A-B61C-B7B98FA76F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4E2B81-E3EB-4938-A43B-9AF7730F3EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4E2B81-E3EB-4938-A43B-9AF7730F3EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4E2B81-E3EB-4938-A43B-9AF7730F3EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4E2B81-E3EB-4938-A43B-9AF7730F3EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
