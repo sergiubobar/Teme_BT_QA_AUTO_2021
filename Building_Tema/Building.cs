@@ -61,7 +61,7 @@ namespace Building_Tema
 
         public static void PrintBuilding(Building building)
         {
-            Console.WriteLine("\n***********************************BUILDING*********************************************" +
+            Console.WriteLine("\n****************************** Villa a la Sergiu! ****************************************" +
                 "\n\nThe building has {0} floors, {1} rooms, an area of {2} and a capacity of {3} people.\n",
                 building.GetNumberOfFloors(),
                 building.GetTotalNumberOfRooms(),
