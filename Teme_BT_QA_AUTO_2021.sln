@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teme_BT_QA_AUTO_2021", "Teme_BT_QA_AUTO_2021\Teme_BT_QA_AUTO_2021.csproj", "{288BC236-433A-4D8A-B61C-B7B98FA76F05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library_Tema", "Library_Tema\Library_Tema.csproj", "{5B4E2B81-E3EB-4938-A43B-9AF7730F3EEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library_Tema", "Library_Tema\Library_Tema.csproj", "{5B4E2B81-E3EB-4938-A43B-9AF7730F3EEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volume_Teme", "Volume_Teme\Volume_Teme.csproj", "{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volume_Teme", "Volume_Teme\Volume_Teme.csproj", "{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Building_Tema", "Building_Tema\Building_Tema.csproj", "{9DB752EB-6639-4D3B-B0B9-018469A859E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB752EB-6639-4D3B-B0B9-018469A859E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB752EB-6639-4D3B-B0B9-018469A859E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB752EB-6639-4D3B-B0B9-018469A859E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB752EB-6639-4D3B-B0B9-018469A859E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
