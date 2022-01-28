@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library_Tema", "Library_Tem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volume_Teme", "Volume_Teme\Volume_Teme.csproj", "{023B2BEF-CEA5-47C3-8E7D-B225533CCED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Building_Tema", "Building_Tema\Building_Tema.csproj", "{9DB752EB-6639-4D3B-B0B9-018469A859E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Building_Tema", "Building_Tema\Building_Tema.csproj", "{9DB752EB-6639-4D3B-B0B9-018469A859E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit_Teme", "NUnit_Teme\NUnit_Teme.csproj", "{F0AB07FE-B1A5-4081-9675-34999DDDBBAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9DB752EB-6639-4D3B-B0B9-018469A859E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DB752EB-6639-4D3B-B0B9-018469A859E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DB752EB-6639-4D3B-B0B9-018469A859E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0AB07FE-B1A5-4081-9675-34999DDDBBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0AB07FE-B1A5-4081-9675-34999DDDBBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0AB07FE-B1A5-4081-9675-34999DDDBBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0AB07FE-B1A5-4081-9675-34999DDDBBAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
