@@ -20,7 +20,7 @@ namespace NUnit_Teme
         {
             driver = new ChromeDriver();
         }
-        
+        /*
         [TestCase("xsergiux", "sergiuflorin", "sergiuflorin", "Sergiu", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania","", "", "", "", "", "")]
         [TestCase("xse", "sergiuflorin", "sergiuflorin", "Sergiu", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania", "Minimum of 4 characters is required!", "", "", "", "", "")]
         [TestCase("xsergiux", "", "", "Sergiu", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania","", "Password is required!", "", "", "", "")]
@@ -34,7 +34,7 @@ namespace NUnit_Teme
         [TestCase("xsergiux", "sergiuflorin", "sergiuflorin", "S", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania","", "", "", "Minimum of 2 characters is required!", "", "")]
         [TestCase("xsergiux", "sergiuflorin", "sergiuflorin", "Sergiu", "FlorinFlorinFlorinFlorinFlorinFlorinFlorinFlorin", "sergiu@florin.ro", "10.10.2010", "Romania","", "", "", "", "Maximum of 35 characters allowed!", "")]
         [TestCase("xsergiux", "sergiuflorin", "sergiuflorin", "SergiuSergiuSergiuSergiuSergiuSergiuSergiuSergiuSergiu", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania","", "", "", "Maximum of 35 characters allowed!", "", "")]
-       
+       */
         [Test]
         public void Test01(string user, string pass, string confirmPass, string fName, string lName, string mail, string dateOfb, string nat, string userErr, string passErr, string confirmPassErr, string fNameErr, string lNameErr, string mailErr)
         {

@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,7 +8,7 @@ namespace FrameworkArchitecture.PageModels
 {
     public class RegistrationPage : BasePage
     {
-        const string registerTextSelector = "#register > formfield > legend"; // css
+        const string registerTextSelector = "#root > div > div.content > div > div:nth-child(1) > div > div > h1 > small";
         const string username = "input-username";
         const string password = "input-password";
         const string confirmPassword = "input-password-confirm";
@@ -35,5 +36,48 @@ namespace FrameworkArchitecture.PageModels
         {
             return driver.FindElement(By.CssSelector(registerTextSelector)).Text;
         }
+
+        public void Register(string user, string pass, string confirmPass, string fName, string lName, string mail, string dateOfb, string nat, string userErr, string passErr, string confirmPassErr, string fNameErr, string lNameErr, string mailErr)
+        {
+            var usernameInputElement = driver.FindElement(By.Id(username));
+            usernameInputElement.Clear();
+            usernameInputElement.SendKeys(user);
+            var passwordInputElement = driver.FindElement(By.Id(password));
+            passwordInputElement.Clear();
+            passwordInputElement.SendKeys(pass);
+            var confirmPasswordInputElement = driver.FindElement(By.Id(confirmPassword));
+            confirmPasswordInputElement.Clear();
+            confirmPasswordInputElement.SendKeys(confirmPass);
+            var titleMrElement = driver.FindElement(By.CssSelector(titleMr));
+            titleMrElement.Click();
+            var titleMsElement = driver.FindElement(By.CssSelector(titleMs));
+            titleMsElement.Click();
+            var firstNameInputElement = driver.FindElement(By.Id(firstName));
+            firstNameInputElement.SendKeys(fName);
+            var lastNameInputElement = driver.FindElement(By.Id(lastName));
+            lastNameInputElement.SendKeys(lName);
+            var emailInputElement = driver.FindElement(By.Id(email));
+            emailInputElement.SendKeys(mail);
+            var dateOfBirthInputElement = driver.FindElement(By.Id(dateOfBirth));
+            dateOfBirthInputElement.SendKeys(dateOfb);
+            var nationalityInputElement = driver.FindElement(By.Id(nationality));
+            nationalityInputElement.SendKeys(nat);
+            var termsElemnt = driver.FindElement(By.Id(terms));
+            termsElemnt.Click();
+            var submitButton = driver.FindElement(By.CssSelector(submit));
+            submitButton.Submit();
+
+        }
+
+
     }
 }
+
+/*
+var usernameErrorText = driver.FindElement(By.CssSelector(usernameError));
+var passwordErrorText = driver.FindElement(By.CssSelector(passwordError));
+var confirmPasswordErrorText = driver.FindElement(By.CssSelector(confirmPasswordError));
+var firstNameErrorText = driver.FindElement(By.CssSelector(firstNameError));
+var lastNameErrorText = driver.FindElement(By.CssSelector(lastNameError));
+var emailErrorText = driver.FindElement(By.CssSelector(emailError));
+*/
