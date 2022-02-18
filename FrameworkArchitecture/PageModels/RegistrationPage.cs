@@ -69,15 +69,32 @@ namespace FrameworkArchitecture.PageModels
 
         }
 
+        public string CheckUsernameErrorText()
+        {
+            return driver.FindElement(By.CssSelector(usernameError)).Text;
+        }
+        public string CheckPasswordErrorText()
+        {
+            return driver.FindElement(By.CssSelector(passwordError)).Text;
+        }
+        public string CheckConfirmPasswordErrorText()
+        {
+            return driver.FindElement(By.CssSelector(confirmPasswordError)).Text;
+        }
+        public string CheckFirstNameErrorText()
+        {
+            return driver.FindElement(By.CssSelector(firstNameError)).Text;
+        }
+        public string CheckLastNameErrorText()
+        {
+            return driver.FindElement(By.CssSelector(lastNameError)).Text;
+        }
+        public string CheckEmailErrorText()
+        {
+            return driver.FindElement(By.CssSelector(emailError)).Text;
+        }
+
 
     }
 }
 
-/*
-var usernameErrorText = driver.FindElement(By.CssSelector(usernameError));
-var passwordErrorText = driver.FindElement(By.CssSelector(passwordError));
-var confirmPasswordErrorText = driver.FindElement(By.CssSelector(confirmPasswordError));
-var firstNameErrorText = driver.FindElement(By.CssSelector(firstNameError));
-var lastNameErrorText = driver.FindElement(By.CssSelector(lastNameError));
-var emailErrorText = driver.FindElement(By.CssSelector(emailError));
-*/
