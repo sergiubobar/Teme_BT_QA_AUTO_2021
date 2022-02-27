@@ -15,7 +15,7 @@ namespace FrameworkArchitecture.Test
         [SetUp]
         public void Setup()
         {
-            // Instatiate the browser using the Browser Factory class created in Utilities
+            // Instatiate the browser using the Browser Factory class created in Utilities --- WebBrowsers.Chrome
             driver = Browser.GetDriver();
         }
 

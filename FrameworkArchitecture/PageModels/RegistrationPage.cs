@@ -53,12 +53,16 @@ namespace FrameworkArchitecture.PageModels
             var titleMsElement = driver.FindElement(By.CssSelector(titleMs));
             titleMsElement.Click();
             var firstNameInputElement = driver.FindElement(By.Id(firstName));
+            firstNameInputElement.Clear();
             firstNameInputElement.SendKeys(fName);
             var lastNameInputElement = driver.FindElement(By.Id(lastName));
+            lastNameInputElement.Clear();
             lastNameInputElement.SendKeys(lName);
             var emailInputElement = driver.FindElement(By.Id(email));
+            emailInputElement.Clear();
             emailInputElement.SendKeys(mail);
             var dateOfBirthInputElement = driver.FindElement(By.Id(dateOfBirth));
+            dateOfBirthInputElement.Clear();
             dateOfBirthInputElement.SendKeys(dateOfb);
             var nationalityInputElement = driver.FindElement(By.Id(nationality));
             nationalityInputElement.SendKeys(nat);
@@ -71,7 +75,8 @@ namespace FrameworkArchitecture.PageModels
 
         public string CheckUsernameErrorText()
         {
-            return driver.FindElement(By.CssSelector(usernameError)).Text;
+            var usernameErr = driver.FindElement(By.CssSelector(usernameError)).Text;
+            return username;
         }
         public string CheckPasswordErrorText()
         {

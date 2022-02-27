@@ -14,12 +14,13 @@ namespace FrameworkArchitecture.Test.AuthenticationSite
 
         // Login Test without csv
         [Test]
-        public void BasicAuth()
+        [TestCase("user1", "pass1")]
+        public void BasicAuth(string user, string password)
         {
             driver.Navigate().GoToUrl(url + "login");
             LoginPage lp = new LoginPage(driver);
             Assert.AreEqual("Authentication", lp.CheckPage());
-            lp.Login("user1", "pass1");
+            lp.Login(user, password);
         }
     }
 
