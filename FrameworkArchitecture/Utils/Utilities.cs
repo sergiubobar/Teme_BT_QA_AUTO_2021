@@ -13,7 +13,7 @@ using System.Text.Json;
 
 namespace FrameworkArchitecture.Utils
 {
-    public class Utils
+    public class Utilities
     {
 /*
         public static IWebElement WaitForElement(IWebDriver driver, int seconds, By locator)
@@ -211,6 +211,12 @@ namespace FrameworkArchitecture.Utils
                 files.Add(fi.FullName);
             }
             return files;
+        }
+
+        public static string[][] GetDataFromCsv(string path)
+        {
+            var lines = File.ReadAllLines(path).Select(a => a.Split(',')).Skip(1);
+            return lines.ToArray();
         }
 
     }

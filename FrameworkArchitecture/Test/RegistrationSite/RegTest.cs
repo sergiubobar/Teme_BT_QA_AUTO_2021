@@ -14,7 +14,6 @@ namespace FrameworkArchitecture.Test.RegistrationSite
 
         /*
         [TestCase("xsergiux", "sergiuflorin", "sergiuflorin", "Sergiu", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania","", "", "", "", "", "")]
-        
         [TestCase("xse", "sergiuflorin", "sergiuflorin", "Sergiu", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania", "Minimum of 4 characters is required!", "", "", "", "", "")]
         [TestCase("xsergiux", "", "", "Sergiu", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania","", "Password is required!", "", "", "", "")]
         [TestCase("", "sergiuflorin", "sergiuflorin", "Sergiu", "Florin", "sergiu@florin.ro", "10.10.2010", "Romania", "Username is required!", "", "", "", "", "")]
@@ -45,19 +44,17 @@ namespace FrameworkArchitecture.Test.RegistrationSite
             Assert.AreEqual(mailErr, rp.CheckEmailErrorText()); */
         }
 
-        /*
+
         private static IEnumerable<TestCaseData> GetCredentialsDataCsv()
         {
-            var csvData = Utils.GetDataTableFromCsv("TestData\\registrationCredentials.csv");
-            for (int i = 0; i < csvData.Rows.Count; i++)
+            foreach (var values in Utils.Utilities.GetDataFromCsv("TestData\\registerCredentials.csv"))
             {
-                yield return new TestCaseData(csvData.Rows[i].ItemArray);
+                yield return new TestCaseData(values);
             }
         }
-        */
 
+        
         [Test, TestCaseSource("GetCredentialsDataCsv")]
-
         public void BasicRegistration(string user, string pass, string confirmPass, string fName, string lName, string mail, string dateOfb, string nat, string userErr, string passErr, string confirmPassErr, string fNameErr, string lNameErr, string mailErr)
         {
             driver.Navigate().GoToUrl(url + "registration");

@@ -9,7 +9,7 @@ namespace FrameworkArchitecture.Utils
     {
         const string extensionPath = "Other\\ExtensionFile";
 
-        static Dictionary<string, string> configData = Utils.ReadConfig("config.properties");
+        static Dictionary<string, string> configData = Utilities.ReadConfig("config.properties");
         static string protocol = configData["protocol"];
         static string hostname = configData["hostname"];
         static string port = configData["port"];
